@@ -17,19 +17,6 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
 		registry.addInterceptor(localeChangeInterceptor());
 	}
 
-//	@Override
-//	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-//		super.configureMessageConverters(converters);
-//		converters.add(new ByteArrayHttpMessageConverter());
-//	}
-
-
-//	@Override
-//	public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-//		converters.clear();
-//		converters.add(new ByteArrayHttpMessageConverter());
-//	}
-
 	@Bean
 	public RemoteIpFilter mRemoteIpFilter() {
 		return new RemoteIpFilter();
